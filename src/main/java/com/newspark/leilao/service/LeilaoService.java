@@ -17,7 +17,7 @@ public class LeilaoService {
   private final LeilaoDao leilaoDao;
 
   @Autowired
-  public LeilaoService(@Qualifier("fakeDao") LeilaoDao leilaoDao) {
+  public LeilaoService(@Qualifier("postgres") LeilaoDao leilaoDao) {
     this.leilaoDao = leilaoDao;
   }
 

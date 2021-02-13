@@ -23,7 +23,7 @@ DELETE http://localhost:8080/api/v1/leilao/776bf410-b3e3-4d22-b6bf-fbde8fa01a0d 
 content-type: application/json
 
 ### Put  
-PUT http://localhost:8080/api/v1/leilao/a29bc477-ddbc-4b63-b999-bc0ea5a3eaeb HTTP/1.1
+PUT http://localhost:8080/api/v1/leilao/02688cb2-bd56-4259-bbe5-b726193361fe HTTP/1.1
 content-type: application/json
 
 {

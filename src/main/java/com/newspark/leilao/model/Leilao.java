@@ -4,10 +4,14 @@ import java.util.Date;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import javax.validation.constraints.NotBlank;
 
 public class Leilao {
   private final UUID id;
+
+  @NotBlank
   private final String descricao;
+
   private final Date dia;
 
   public Leilao(@JsonProperty("id") UUID id, @JsonProperty("descricao") String descricao,

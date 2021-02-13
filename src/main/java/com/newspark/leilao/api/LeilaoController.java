@@ -3,10 +3,13 @@ package com.newspark.leilao.api;
 import java.util.List;
 import java.util.UUID;
 
+import javax.validation.Valid;
+
 import com.newspark.leilao.model.Leilao;
 import com.newspark.leilao.service.LeilaoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,7 +30,7 @@ public class LeilaoController {
   }
 
   @PostMapping
-  public void addLeilao(@RequestBody Leilao leilao) {
+  public void addLeilao(@RequestBody @Valid @NonNull Leilao leilao) {
     this.leilaoService.addLeilao(leilao);
   }
 
@@ -47,7 +50,7 @@ public class LeilaoController {
   }
 
   @PutMapping(path = "{id}")
-  public void updateLeilaoById(@PathVariable("id") UUID id, @RequestBody Leilao newLeilao) {
+  public void updateLeilaoById(@PathVariable("id") UUID id, @RequestBody @Valid @NonNull Leilao newLeilao) {
     leilaoService.updateLeilaoById(id, newLeilao);
   }
 }
