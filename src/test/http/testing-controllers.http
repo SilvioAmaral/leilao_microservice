@@ -3,7 +3,7 @@ POST http://localhost:8080/api/v1/leilao HTTP/1.1
 content-type: application/json
 
 {
-    "descricao": "sample leilao",
+    "descricao": "sample leilao2",
     "dia": "Wed, 21 Oct 2022 18:27:50 GMT"
 }
 
@@ -14,16 +14,16 @@ content-type: application/json
 
 
 ### get by ID
-GET http://localhost:8080/api/v1/leilao/776bf410-b3e3-4d22-b6bf-fbde8fa01a0d HTTP/1.1
+GET http://localhost:8080/api/v1/leilao/8f033d47-bc22-4049-9ce5-7bf55f54991a HTTP/1.1
 content-type: application/json
 
 
 ### delete  
-DELETE http://localhost:8080/api/v1/leilao/776bf410-b3e3-4d22-b6bf-fbde8fa01a0d HTTP/1.1
+DELETE http://localhost:8080/api/v1/leilao/fef31dc2-5dc0-45d2-91aa-c02a258ddf56 HTTP/1.1
 content-type: application/json
 
 ### Put  
-PUT http://localhost:8080/api/v1/leilao/02688cb2-bd56-4259-bbe5-b726193361fe HTTP/1.1
+PUT http://localhost:8080/api/v1/leilao/93b5b364-124d-447c-96b5-bc9441efa78e HTTP/1.1
 content-type: application/json
 
 {

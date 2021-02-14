@@ -1,0 +1,6 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/leilao
+    username: admin
+    password: secret
+    pool-size: 30
